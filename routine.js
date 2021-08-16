@@ -10,20 +10,20 @@ function statistics() {
 
 /*edit button for wake up time*/
 function clickEditWakeup() {
-    var url = "http://localhost/orbital_247/wakeup.php"; //needs to be changed
+    var url = "../wakeup.php"; //needs to be changed
     let myRef = window.open(url, 'mywin', 'left=20, top=20, width=700, height=700, toolbar=1, resizable=0');
     myRef.focus();
 }
 
 /*edit button for productive time*/
 function clickEditProductive() {
-    var url = "http://localhost/orbital_247/inputProductivity.php"; //needs to be changed
+    var url = "../inputProductivity.php"; //needs to be changed
     let myRef = window.open(url, 'mywin', 'left=20, top=20, width=1900, height=700, toolbar=1, resizable=0');
     myRef.focus();
 }
 
 function OpenPopupWindow() {   
-    var url = "http://localhost/orbital_247/add_routine_task.php"; 
+    var url = "../add_routine_task.php"; 
     let myRef = window.open(url, 'mywin', 'left=20, top=20, width=2000, height=800, toolbar=1, resizable=0');
     myRef.focus();
 }
@@ -175,7 +175,7 @@ function printRoutineList(printArr) {
             statement = "Weekly " + ": [" + printvaljs(convertjs(startTimeHour)) + ":" + printvaljs(startTimeMin) + printwordjs(startTimeHour) + " - " + 
             printvaljs(convertjs(endTimeHour)) + ":" + printvaljs(endTimeMin) + printwordjs(endTimeHour) + "] " + printArr[i].taskName;
         } else if (printArr[i].getFreq() == 2) {
-            statement = "Bieekly: " + ": [" + printvaljs(convertjs(startTimeHour)) + ":" + printvaljs(startTimeMin) + printwordjs(startTimeHour) + " - " + 
+            statement = "Biweekly " + ": [" + printvaljs(convertjs(startTimeHour)) + ":" + printvaljs(startTimeMin) + printwordjs(startTimeHour) + " - " + 
             printvaljs(convertjs(endTimeHour)) + ":" + printvaljs(endTimeMin) + printwordjs(endTimeHour) + "] " + printArr[i].taskName;
         } else if (printArr[i].getFreq() == 3) {
             statement = "Monthly"+ ": [" + printvaljs(startTimeHour) + ":" + printvaljs(startTimeMin) + printwordjs(startTimeHour) + " - " + 
