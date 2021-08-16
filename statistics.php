@@ -57,7 +57,7 @@
             </div>
 
             <div id="total">
-                <h2>Total time spent completing tasks today: </h2>
+                <h2>Total time to be spent on tasks today: </h2>
             </div>
 
             <!-- Newly added for pie chart -->
@@ -542,7 +542,7 @@
                     barChart.container('barContainer');
                     barChart.draw();
 
-                    barChart.title("Productivity Destribution");
+                    barChart.title("Productivity Distribution");
                     barChart.title().fontFamily("Signika Negative");
                     barChart.title().fontSize(23);
                     barChart.title().fontWeight(700);
@@ -643,7 +643,7 @@
                 totalDuration.style.borderRadius = "5px";
                 totalDuration.style.border = "black";
                 totalDuration.style.marginTop= "10px";
-                totalDuration.style.marginLeft= "90px";
+                totalDuration.style.marginLeft= "70px";
                 totalDuration.style.height= "40px";
                 totalDuration.style.width= "230px";
                 totalMain.appendChild(totalDuration);
