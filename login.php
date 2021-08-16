@@ -27,7 +27,7 @@
 			/* This is for the big 24/7 symbol at the top left hand corner. */
 			.header div {
 				position: absolute;
-				top: calc(30% - 75px);
+				top: calc(30% - 10px);
 				left: calc(51% - 50px);
 				color: black;
 				font-family: "Signika Negative", sans-serif;
@@ -197,7 +197,7 @@
 		<br />
 
 		<div class="login">
-			<div class="or">---- or ----</div>
+			<!-- <div class="or">---- or ----</div> -->
 			<!-- need to change type and name to email but need to update css accordingly-->
 			<form action="includes/login.inc.php" method="POST">
 				<input type="text" placeholder="Username/Email" name="uid" id="email_id"/><br />
